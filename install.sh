@@ -32,4 +32,5 @@ else
 		mkdir -pv $LOCALE
 		cp ./* $LOCALE
 		echo  -e Done!
+	fi
 fi
