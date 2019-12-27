@@ -2,11 +2,11 @@
 
 #	Adam Kalinowski
 #	Install of My RC
-#	0.03.12.27.2019
+#	0.04.12.27.2019
 #	GNU GPL v3
 
-LOCALE="~/.config/nvim"
-CONFIG="~/.config/nvim/init.vim"
+LOCALE="$HOME/.config/nvim"
+CONFIG="$HOME/.config/nvim/init.vim"
 SCS="./vscrc.vim"
 TEMP="./templates"
 
@@ -34,3 +34,6 @@ else
 		echo  -e Done!
 	fi
 fi
+
+cd $HOME
+rm -rf My-NVIM-Config
