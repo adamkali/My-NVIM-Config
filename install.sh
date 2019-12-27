@@ -15,13 +15,13 @@ if [[ -d $LOCALE ]]; then
 	if [[ -f $CONFIG ]]; then
 		read -p  "YOU ARE ABOUT TO CHANGE YOUR CURRENT INIT.VIM AND ALL OTHER NEOVIM CONFIG FILES!\n  CONTINUE? [Y/n] " -n 1 -r
 		if [[ $REPLY =~ ^[Yy]$ ]]; then
-			cp ./* $LOCALE
+			cp -r ./* $LOCALE
 			echo  -e Done!
 		else
 			read -p  "You can simply copy the templates and the vim shortcut rc.\n  Would you like to do this? [Y/n] " -n 1 -r
 			if [[ $REPLY =~ ^[Yy]$ ]]; then
 				cp $SCS $LOCALE
-				cp $TEMP $LOCALE
+				cp -r $TEMP $LOCALE
 				echo  -e Done!
 			fi
 		fi
@@ -30,7 +30,7 @@ else
 	read -p  "You are about to create your new vim configuration.\n  Continue? [Y/n] " -n 1 -r
 	if [[ $REPLY =~ ^[Yy]$ ]]; then
 		mkdir -pv $LOCALE
-		cp ./* $LOCALE
+		cp -r ./* $LOCALE
 		echo  -e Done!
 	fi
 fi
