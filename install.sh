@@ -2,7 +2,7 @@
 
 #	Adam Kalinowski
 #	Install of My RC
-#	0.02.12.27.2019
+#	0.03.12.27.2019
 #	GNU GPL v3
 
 LOCALE="~/.config/nvim"
