@@ -163,8 +163,8 @@ set clipboard+=unnamedplus
 let g:texflavor = 'latex'
 
 " My own Templates
-	autocmd BufNewFile *.tex 0r /home/adam/.config/nvim/templates/skeleton.tex
-	autocmd BufNewFile *.cpp 0r /home/adam/.config/nvim/templates/skeleton.cpp
+	autocmd BufNewFile *.tex 0r ~/.config/nvim/templates/skeleton.tex
+	autocmd BufNewFile *.cpp 0r ~/.config/nvim/templates/skeleton.cpp
 
 " snippets
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
@@ -176,7 +176,7 @@ let g:texflavor = 'latex'
 	let g:UltiSnipsEditSplit="vertical"
 
 " vscrc.vim
-	so /home/adam/.config/nvim/vscrc.vim
+	so ~/.config/nvim/vscrc.vim
 
 
 " -----------------------------------------------------------------------------

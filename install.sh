@@ -27,11 +27,11 @@ if [[ -d $LOCALE ]]; then
 		fi
 	fi
 else
-	read -p  "You are about to create your new vim configuration.\n  Continue? [Y/n] " -n 1 -r
+	read -p  "You are about to create your new vim configuration.\n  Continue? [Y/n] \n" -n 1 -r
 	if [[ $REPLY =~ ^[Yy]$ ]]; then
 		mkdir -pv $LOCALE
 		cp -r ./* $LOCALE
-		echo  -e Done!
+		echo  "Done!\n"
 	fi
 fi
 
